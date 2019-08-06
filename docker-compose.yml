@@ -1,4 +1,4 @@
-version: "3"
+version: "3.5"
 
 services:
 
@@ -8,7 +8,7 @@ services:
     volumes:
       - ./jenkins-data:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./:/home
+      - ./jenkins-data/.m2:/var/jenkins_home/.m2/repository
     ports:
       - "8085:8080"
     networks:
