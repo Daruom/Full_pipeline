@@ -6,7 +6,7 @@ agent any
     checkout SCM
     }
    }
-  stage("Build")
+  stage("Build") {
    parallel {
     stage("Compile") {
      agent {
@@ -23,4 +23,5 @@ agent any
     }
    }
   }
+}
 }
