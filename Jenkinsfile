@@ -3,7 +3,7 @@ agent any
  stages {
   stage("SCM") {
    steps {
-    checkout SCM
+    checkout scm
     }
    }
   stage("Build") {
